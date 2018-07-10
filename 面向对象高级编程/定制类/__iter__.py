@@ -1,0 +1,18 @@
+#__author: Liu Zheng
+#date:2018/6/21
+
+
+#使得类被用于for ... in 循环，类似list和tuple
+class Fib(object):
+    def __init__(self):
+        self.a,self.b  = 0,1    #初始化两个计数器
+    def __iter__(self):
+        return self #实力本身就是迭代对象，故返回自己
+    def __next__(self):
+        self.a,self.b = self.b,self.a + self.b  #计算下一个值
+        if self.a > 100000:
+            raise StopIteration()
+        return self.a
+
+for n in Fib():
+    print(n)
