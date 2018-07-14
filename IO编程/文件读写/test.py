@@ -24,3 +24,12 @@ for i in f.readlines():
 # f = open('text','a')#追加模式
 # f.write()
 # f.close()
+#
+# dic = str({'1':'1111'})  #将字典写入文件
+# f = open('test.txt','w')
+# f.write(dic)
+# f.close()
+
+f = open('test.txt','r')
+data = f.read()
+print(eval(data)['1'])   #先eval 再[]

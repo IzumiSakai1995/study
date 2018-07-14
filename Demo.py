@@ -4,13 +4,9 @@
 # @File    : Demo.py
 # @Software: PyCharm
 
-import requests
+def fact(n):
+    if n  ==1 :
+        return 1
+    return n*fact(n-1)
 
-headers = {
-    'User-Agent':'"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; AcooBrowser; .NET CLR 1.1.4322; .NET CLR 2.0.50727)"'
-}
-url = 'http://maoyan.com/board/4'
-response = requests.get(url,headers=headers)
-with open('demo_log.txt','a',encoding='utf-8') as f:
-    f.write(response.text)
-    f.close()
+print(fact(10))
