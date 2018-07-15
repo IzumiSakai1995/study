@@ -22,7 +22,8 @@ def fib(max):
         yield b
         a,b=b,a+b
         n=n+1
+        print(n)
 
-f = fib(6)
+fib(6)
 
 
