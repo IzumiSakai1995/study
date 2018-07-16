@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 # @Time    : 2018/07/15 23:25:36
 # @Author  : Izumi Sakai
-# @File    : time_.py
+# @File    : time_module.py
 # @Software: PyCharm
 import datetime
 import time  # provides various functions to manipulate time values

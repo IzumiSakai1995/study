@@ -39,5 +39,4 @@ if __name__ == '__main__':
     main()
     print('Time=', time)
 
-import re
 
