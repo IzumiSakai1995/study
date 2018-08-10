@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        /**{通用选择器}*/
+        /*p{标签选择器}*/
+        /*#p2{*/
+            /*color: greenyellow;*/
+        /*}*/
+        /*.demo{*/
+            /*background-color:red ;*/
+        /*}*/
+
+        /*组合选择器*/
+        /*div p{*/
+            /*color: red;*/
+        /*}*/
+        /*div .demo{*/
+            /*color: greenyellow;*/
+        /*}*/
+
+        /*#outer .c2 .demo{*/
+            /*color: black;*/
+        /*}*/
+        /*空格子孙选择器 >子代选择器*/
+        /*逗号并列查找 并列选择器*/
+
+        /*毗邻选择器 必须挨着*/
+        #outer+.t{
+            color: green;
+        }
+
+    </style>
+
+</head>
+<body>
+<p class="demo">hello p </p>
+<div id="outer">
+    hello div
+    <span>hello span</span>
+    <p id="p2">hello p2</p>
+    <p class="demo">hello p3</p>
+    <div class="c2"><p class="demo">hello p4</p></div>
+</div>
+<p>pppp</p>
+<p class="t">pppppp</p>
+
+</body>
+</html>
