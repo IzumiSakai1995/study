@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+
+
+<script>
+    // ECMA DOM BOM
+    // ECMA script
+    // function func1() {   // 推荐创建方式
+    //     alert(123);
+    //     return 8
+    //
+    // }
+    // ret = func1()
+    // alert(ret)
+    //
+    // // var func2 =new Function ("x=1","alert(x)"); //创建方式2
+    var add = new Function ("a","b","alert(a+b)");
+    add(1,2);
+    // ------function属性和方法-------
+    alert(add.length);  // 参数的个数
+    alert(void (add)); // void 阻拦返回值
+
+</script>
+</body>
+</html>

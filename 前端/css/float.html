@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .outer{
+            background-color: greenyellow;
+            width: 100%;
+            height: 20px;
+        }
+        .div1{
+            width: 50%;
+            height: 40px;
+            float: left;
+            text-align: center;
+
+        }
+        .div2{
+
+            width: 50%;
+            height: 40px;
+            float: left;
+            text-align: center;
+
+        }
+        .bottom{
+            background-color: blue;
+            color: red;
+            width: 100%;
+            height: 20px;
+            text-align: center;
+            clear: left;
+            /*clear: left;左边不能有float元素 有则下移*/
+
+        }
+    </style>
+</head>
+<body>
+
+<!--<div class="div1">div1</div>-->
+<!--<div class="div2">div2</div>-->
+<!--<div class="div3">div3</div>-->
+<div class="outer">
+    <div class="div1">菜单1</div>
+    <div class="div2">菜单2</div>
+</div>
+    <div class="bottom">bottom</div>
+</body>
+</html>
